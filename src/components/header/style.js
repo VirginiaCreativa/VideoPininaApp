@@ -2,6 +2,13 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   Header: {
-    paddingVertical: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row'
   },
+  LogoTipo: {
+    fontFamily: 'FjallaOne',
+    fontSize: 30,
+    marginRight: 4,
+  }
 });
