@@ -1,28 +1,18 @@
-import React from 'react';
+import React, { Component }  from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import SvgUri from 'react-native-svg-uri';
+import Home from './src/screens/home'
+import Header from './src/components/header/header'
 
-export default class App extends React.Component {
+ class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <SvgUri
-          width="100"
-          height="100"
-          source={require('./assets/logo.svg')}
-        />
-        <Text style={{color: '#fff'}}>Virginia Velásquez Soto</Text>
-      </View>
+      <Home>
+        <Header />
+        <Text>Buscador</Text>
+        <Text>Categorias</Text>
+        <Text>Sugerencias</Text>
+      </Home>  
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#b33771',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    padding: 30,
-  },
-});
+export default App;
