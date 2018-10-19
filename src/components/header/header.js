@@ -10,8 +10,8 @@ import StyleSheet from './style';
         <FontText style={StyleSheet.LogoTipo}>PININA</FontText>
         <SvgUri
           source={require('../../../assets/logo.svg')}
-          width = "32"
-          height = "32"
+          width = "36"
+          height = "36"
         />
       </View>
     </SafeAreaView>
