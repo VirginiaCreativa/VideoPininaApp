@@ -5,17 +5,16 @@ import FontText from './../common/fontload'
 import StyleSheet from './style';
 
  const Header = () => (
-    <SafeAreaView>
-      <View style={StyleSheet.Header}>
-        <FontText style={StyleSheet.LogoTipo}>PININA</FontText>
-        <SvgUri
-          source={require('../../../assets/logo.svg')}
-          width = "36"
-          height = "36"
-        />
-      </View>
-    </SafeAreaView>
-  );
+  <SafeAreaView>
+    <View style={StyleSheet.Header}>
+      <FontText style={StyleSheet.LogoTipo}>PININA</FontText>
+      <SvgUri
+        source={require('../../../assets/logo.svg')}
+        width = "36"
+        height = "36"
+      />
+    </View>
+  </SafeAreaView>
+);
  
-
 export default Header;
