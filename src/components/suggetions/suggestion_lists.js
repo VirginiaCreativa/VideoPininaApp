@@ -1,16 +1,19 @@
 import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
-import FontText from './../common/fontload'
+import FontText from '../common/fontload'
 
-const news_layout = ({ title, cover, year, stars }) => {
+const suggetionslists = ({ title, cover, tag, defin, sinom }) => {
+  const sinomino = sinom.join(', ');
   return (
     <View style={classStyle.Container}>
       <View style={classStyle.Col}>
         <Image style={classStyle.Cover} source={{uri: cover }}></Image>
       </View>
       <View style={classStyle.Col}>
+        <FontText style={classStyle.Tag}>{tag}</FontText>
         <FontText style={classStyle.Title}>{title}</FontText>
-
+        <FontText style={classStyle.Defin}>{defin}</FontText>
+        <FontText style={classStyle.Sin}>{sinomino}</FontText>
       </View>
     </View>
   );
@@ -19,10 +22,15 @@ const classStyle = StyleSheet.create({
   Container: {
     flexDirection: 'row',
     justifyContent: 'flex-start',
-    padding: 20,
+    paddingVertical: 20,
+    paddingHorizontal: 10,
     backgroundColor: '#fff',
     marginBottom: 20,
     borderRadius: 6,
+  },
+  Col: {
+    marginHorizontal: 5,
+    justifyContent: 'space-between'
   },
   Title: {
     fontFamily: 'FjallaOne',
@@ -35,4 +43,4 @@ const classStyle = StyleSheet.create({
   }  
 })
 
-export default news_layout;
+export default suggetionslists;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, StyleSheet} from 'react-native';
-import FontText from './../common/fontload'
+import FontText from '../common/fontload'
 
-const news_layout = ({ title, children }) => {
+const suggetionlayout = ({ title, children }) => {
   return (
     <View style={classStyle.Container}>
       <FontText style={classStyle.Title}>{title}</FontText>
@@ -27,4 +27,4 @@ const classStyle = StyleSheet.create({
   }
 })
 
-export default news_layout;
+export default suggetionlayout;

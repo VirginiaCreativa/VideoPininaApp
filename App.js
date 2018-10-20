@@ -1,9 +1,9 @@
 import React, { Component }  from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import Home from './src/screens/home'
 import Header from './src/components/header/header'
-import News from './src/screens/news'
+import Home from './src/screens/home'
+import Suggetions from './src/screens/suggetions'
 
  class App extends Component {
   render() {
@@ -11,7 +11,7 @@ import News from './src/screens/news'
       <View style={classStyle.Body}>
         <Home>
           <Header/>
-          <News />
+          <Suggetions />
         </Home>  
       </View>
     );
