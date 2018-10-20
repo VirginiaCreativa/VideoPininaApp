@@ -6,14 +6,14 @@ const suggetionslists = ({ title, cover, tag, defin, sinom }) => {
   const sinomino = sinom.join(', ');
   return (
     <View style={classStyle.Container}>
-      <View style={classStyle.Col}>
-        <Image style={classStyle.Cover} source={{uri: cover }}></Image>
+      <View style={classStyle.Cover}>
+        <Image style={classStyle.Image} source={{uri: cover }}></Image>
       </View>
-      <View style={classStyle.Col}>
-        <FontText style={classStyle.Tag}>{tag}</FontText>
-        <FontText style={classStyle.Title}>{title}</FontText>
-        <FontText style={classStyle.Defin}>{defin}</FontText>
-        <FontText style={classStyle.Sin}>{sinomino}</FontText>
+      <View style={classStyle.Info}>
+        <FontText style={[classStyle.Tag, classStyle.spaceBottom]}>{tag}</FontText>
+        <FontText style={[classStyle.Title, classStyle.spaceBottom]}>{title}</FontText>
+        <FontText style={[classStyle.Defin, classStyle.spaceBottom]}>{defin}</FontText>
+        <FontText style={[classStyle.Sin, classStyle.spaceBottom]}>{sinomino}</FontText>
       </View>
     </View>
   );
@@ -22,25 +22,43 @@ const classStyle = StyleSheet.create({
   Container: {
     flexDirection: 'row',
     justifyContent: 'flex-start',
-    paddingVertical: 20,
-    paddingHorizontal: 10,
+    padding: 15,
     backgroundColor: '#fff',
     marginBottom: 20,
     borderRadius: 6,
   },
-  Col: {
-    marginHorizontal: 5,
-    justifyContent: 'space-between'
+  Cover: {
+    marginRight: 10,
+  },
+  Image: {
+    width: 100, 
+    height: 100
+  },
+  Tag: {
+    alignSelf: 'flex-start',
+    fontFamily: 'FjallaOne',
+    fontSize: 11,
+    color: '#333',
+    backgroundColor: '#ddd',
+    overflow: 'hidden',
+    paddingHorizontal: 6,
+    paddingVertical: 4,
+    borderRadius: 4,
   },
   Title: {
     fontFamily: 'FjallaOne',
     fontSize: 18,
     color: '#282756'
   },
-  Cover: {
-    width: 100, 
-    height: 100
-  }  
+  spaceBottom: {
+    marginBottom: 8,
+  },
+  Info:{
+    width: 0,
+    flexGrow: 1,
+    flex: 1,
+    
+  }      
 })
 
 export default suggetionslists;

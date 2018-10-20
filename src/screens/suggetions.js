@@ -36,7 +36,7 @@ class News extends Component {
     ]
     return (
       <View>
-        <Layout title="Nuevos Definiciones">
+        <Layout title="+ Definiciones">
           <FlatList 
             data={lists}
             renderItem={this.renderItem}
