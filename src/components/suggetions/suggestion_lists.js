@@ -1,19 +1,22 @@
 import React from 'react';
-import { View, StyleSheet, Image } from 'react-native';
+import { View, StyleSheet, Image, Text } from 'react-native';
 import FontText from '../common/fontload'
 
 const suggetionslists = ({ title, cover, tag, defin, sinom }) => {
-  const sinomino = sinom.join(', ');
+  const sinomino = sinom ? sinom.join(', ') : null;
   return (
     <View style={classStyle.Container}>
       <View style={classStyle.Cover}>
         <Image style={classStyle.Image} source={{uri: cover }}></Image>
       </View>
       <View style={classStyle.Info}>
-        <FontText style={[classStyle.Tag, classStyle.spaceBottom]}>{tag}</FontText>
+        <FontText style={[classStyle.Tag, classStyle.spaceBottom]}>{tag}.</FontText>
         <FontText style={[classStyle.Title, classStyle.spaceBottom]}>{title}</FontText>
         <FontText style={[classStyle.Defin, classStyle.spaceBottom]}>{defin}</FontText>
-        <FontText style={[classStyle.Sin, classStyle.spaceBottom]}>{sinomino}</FontText>
+        <FontText style={[classStyle.Sin, classStyle.spaceBottom]}>
+          <FontText style={classStyle.SinSpan}>{sinom ? 'Sinóminos:' : null} </FontText>
+          {sinomino}
+        </FontText>
       </View>
     </View>
   );
@@ -32,33 +35,50 @@ const classStyle = StyleSheet.create({
   },
   Image: {
     width: 100, 
-    height: 100
+    height: 150
   },
   Tag: {
     alignSelf: 'flex-start',
-    fontFamily: 'FjallaOne',
+    fontFamily: 'SourceSansSemiBold',
     fontSize: 11,
-    color: '#333',
-    backgroundColor: '#ddd',
+    color: '#434A6D',
+    backgroundColor: '#D3DEDD',
     overflow: 'hidden',
     paddingHorizontal: 6,
-    paddingVertical: 4,
-    borderRadius: 4,
+    paddingVertical: 2,
+    borderRadius: 2,
   },
   Title: {
-    fontFamily: 'FjallaOne',
-    fontSize: 18,
+    fontFamily: 'SourceSansBold',
+    fontSize: 22,
     color: '#282756'
   },
+  Defin: {
+    fontFamily: 'SourceSansRegular',
+    fontSize: 14,
+    color: '#666',
+    lineHeight: 22
+  },
   spaceBottom: {
-    marginBottom: 8,
+    marginBottom: 4,
   },
   Info:{
     width: 0,
     flexGrow: 1,
     flex: 1,
     
-  }      
+  },
+  Sin: {
+    color: '#36BEBF',
+    fontSize: 12,
+    fontFamily: 'SourceSansRegular',
+  },
+  SinSpan: {
+    color: '#282756',
+    fontSize: 12,
+    fontFamily: 'SourceSansSemiBold',
+  }
+  
 })
 
 export default suggetionslists;

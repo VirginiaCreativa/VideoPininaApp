@@ -12,26 +12,34 @@ class News extends Component {
       {
         key: '1',
         title: 'Simplemente',
-        cover: 'https://dummyimage.com/100x100/ddd/333&text=Simplemente',
-        tag: 'adj',
-        defin: 'Nisi Lorem cillum enim reprehenderit irure dolore duis velit ut ex commodo cupidatat nisi.',
-        sinom: ['Palabra1', 'Palabra2', 'Palabra3']
+        cover: 'https://dummyimage.com/100x150/ddd/333&text=Simplemente',
+        tag: 'adv',
+        defin: 'Con solamente lo que se exprese, nada más.',
+        sinom: null
       },
       {
         key: '2',
         title: 'Excursion',
-        cover: 'https://dummyimage.com/100x100/ddd/333&text=Excursion',
-        tag: 'adj',
-        defin: 'Aute sint voluptate ex Lorem consectetur ut esse amet mollit ex enim fugiat amet mollit.',
-        sinom: ['Palabra1', 'Palabra2', 'Palabra3']
+        cover: 'https://dummyimage.com/100x150/ddd/333&text=Excursion',
+        tag: 'f',
+        defin: 'Viaje de corta duración con fines didácticos o recreativos',
+        sinom: ['paseo', 'caminata']
       },
       {
         key: '3',
         title: 'Implicar',
-        cover: 'https://dummyimage.com/100x100/ddd/333&text=Implicar',
+        cover: 'https://dummyimage.com/100x150/ddd/333&text=Implicar',
         tag: 'adj',
-        defin: 'Cupidatat nostrud veniam ullamco enim reprehenderit esse nostrud ut cupidatat cillum cupidatat.',
-        sinom: ['Palabra1', 'Palabra2', 'Palabra3']
+        defin: 'Meter a alguien en un asunto',
+        sinom: ['Mezclar']
+      },
+      {
+        key: '4',
+        title: 'Cesar',
+        cover: 'https://dummyimage.com/100x150/ddd/333&text=Cesar',
+        tag: 'vb',
+        defin: 'Acaba algo o dejar de hacer una cosa',
+        sinom: ['suspender', 'terminar', 'parar']
       },
     ]
     return (
