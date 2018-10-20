@@ -6,7 +6,7 @@ const news_layout = ({ title, cover, year, stars }) => {
   return (
     <View style={classStyle.Container}>
       <View style={classStyle.Col}>
-        <Image style={classStyle.Cover} source={{uri:'https://dummyimage.com/200x200/#38404/000000&text=Simplemente'}}></Image>
+        <Image style={classStyle.Cover} source={{uri: cover }}></Image>
       </View>
       <View style={classStyle.Col}>
         <FontText style={classStyle.Title}>{title}</FontText>
@@ -17,21 +17,22 @@ const news_layout = ({ title, cover, year, stars }) => {
 };
 const classStyle = StyleSheet.create({
   Container: {
-    flexDirection: 'column',
-    padding: 20,
+    flexDirection: 'row',
     justifyContent: 'flex-start',
+    padding: 20,
     backgroundColor: '#fff',
     marginBottom: 20,
     borderRadius: 6,
-  },
-  Col: {
-   
   },
   Title: {
     fontFamily: 'FjallaOne',
     fontSize: 18,
     color: '#282756'
-  }
+  },
+  Cover: {
+    width: 100, 
+    height: 100
+  }  
 })
 
 export default news_layout;

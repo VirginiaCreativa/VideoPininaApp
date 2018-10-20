@@ -10,9 +10,21 @@ class News extends Component {
   )
   render() {
     const lists = [
-      { key: '1', title: 'Simplemente' },
-      { key: '2', title: 'Excursion' },
-      { key: '3', title: 'Implicar' },
+      {
+        key: '1',
+        title: 'Simplemente',
+        cover: 'https://dummyimage.com/100x100/ddd/333&text=Simplemente'
+      },
+      {
+        key: '2',
+        title: 'Excursion',
+        cover: 'https://dummyimage.com/100x100/ddd/333&text=Excursion'
+      },
+      {
+        key: '3',
+        title: 'Implicar',
+        cover: 'https://dummyimage.com/100x100/ddd/333&text=Implicar'
+      },
     ]
     return (
       <View>
