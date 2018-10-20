@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
 import Layout from './../components/news/news_layout';
 import FontText from './../components/common/fontload';
+import NewsList from '././../components/news/news_list';
 
 class News extends Component {
+  renderItem = ({ item }) => (
+    <NewsList {...item}/>
+  )
   render() {
     const lists = [
       { key: '1', title: 'Simplemente' },
@@ -12,13 +16,10 @@ class News extends Component {
     ]
     return (
       <View>
-        <Layout title="News">
+        <Layout title="Nuevos Definiciones">
           <FlatList 
             data={lists}
-            renderItem={({ item }) => 
-              
-              <FontText style={classStyle.Title}>{item.title}</FontText>
-            }
+            renderItem={this.renderItem}
           />
         </Layout>
       </View>
@@ -26,8 +27,5 @@ class News extends Component {
   }
 }
 const classStyle = StyleSheet.create({
-  Title: {
-    fontSize: 22,
-  }
 })
 export default News;

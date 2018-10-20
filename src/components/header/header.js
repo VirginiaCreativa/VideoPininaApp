@@ -4,7 +4,7 @@ import SvgUri from 'react-native-svg-uri';
 import FontText from './../common/fontload'
 
  const Header = () => (
-  <SafeAreaView style={{backgroundColor: '#fff', marginBottom: 20}}>
+  <SafeAreaView style={{marginBottom: 20}}>
     <View style={styles.Header}>
       <FontText style={styles.LogoTipo}>PININA</FontText>
       <SvgUri
@@ -22,7 +22,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     paddingVertical: 10,
-    backgroundColor: '#fff'
   },
   LogoTipo: {
     fontFamily: 'FjallaOne',

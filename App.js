@@ -20,7 +20,7 @@ import News from './src/screens/news'
 const classStyle = StyleSheet.create({
   Body: {
     flex: 1,
-    backgroundColor: '#282756'
+    backgroundColor: '#f5f4f9'
   }
 })
 export default App;
