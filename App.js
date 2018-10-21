@@ -4,23 +4,20 @@ import { StyleSheet, View } from 'react-native';
 import Header from './src/components/header/header'
 import Home from './src/screens/home'
 import Suggetions from './src/screens/suggetions'
-import APIBASE from './assets/data/deficiones.json';
+import API from './src/config/api';
 
  class App extends Component {
   state = {
     suggestionLists: [],
     refreshing: true
   }
-  getDAta(id) {
-    const data = APIBASE;
-    const listsDism = data.slice(0, 3);
+  
+  componentDidMount() {
+    const suggestionData = API.getSuggetions(4);
     this.setState({
-      suggestionLists: listsDism,
+      suggestionLists: suggestionData,
       refreshing: false
     })
-  }
-  componentDidMount() {
-    this.getDAta(4);
   }
   render() {
     if(this.state.refreshing);

@@ -34,7 +34,7 @@ const classStyle = StyleSheet.create({
     marginRight: 10,
   },
   Image: {
-    width: 100, 
+    width: 150, 
     height: 150
   },
   Tag: {
