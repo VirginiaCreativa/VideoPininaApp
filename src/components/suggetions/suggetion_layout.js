@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet} from 'react-native';
-import FontText from '../common/fontload'
+import FontText from '../common/fontload';
 
 const suggetionlayout = ({ title, children }) => {
   return (
