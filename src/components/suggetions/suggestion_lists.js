@@ -70,12 +70,11 @@ const classStyle = StyleSheet.create({
   },
   Sin: {
     color: '#36BEBF',
-    fontSize: 12,
+    fontSize: 13,
     fontFamily: 'SourceSansRegular',
   },
   SinSpan: {
     color: '#282756',
-    fontSize: 12,
     fontFamily: 'SourceSansSemiBold',
   }
   

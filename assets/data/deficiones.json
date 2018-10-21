@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Simplemente",
+    "cover": "https://dummyimage.com/100x150/ddd/333&text=Simplemente",
+    "tag": "adv",
+    "defin": "Con solamente lo que se exprese, nada más.",
+    "sinom": null
+  },
+  {
+    "id": 2,
+    "title": "Excursion",
+    "cover": "https://dummyimage.com/100x150/ddd/333&text=Excursion",
+    "tag": "f",
+    "defin": "Viaje de corta duración con fines didácticos o recreativos.",
+    "sinom": ["paseo", "caminata"]
+  },
+  {
+    "id": 3,
+    "title": "Implicar",
+    "cover": "https://dummyimage.com/100x150/ddd/333&text=Implicar",
+    "tag": "adj",
+    "defin": "Meter a alguien en un asunto.",
+    "sinom": ["Mezclar"]
+  },
+  {
+    "id": 4,
+    "title": "Cesar",
+    "cover": "https://dummyimage.com/100x150/ddd/333&text=Cesar",
+    "tag": "vb",
+    "defin": "Acaba algo o dejar de hacer una cosa.",
+    "sinom": ["suspender", "terminar", "parar"]
+  },
+  {
+    "id": 5,
+    "title": "Compensar",
+    "cover": "https://dummyimage.com/100x150/ddd/333&text=Compensar",
+    "tag": "vb",
+    "defin": "Nivelar o equilibrar el efecto de una cosa con el de otra.",
+    "sinom": null
+  },
+  {
+    "id": 6,
+    "title": "Aplacar",
+    "cover": "https://dummyimage.com/100x150/ddd/333&text=Aplacar",
+    "tag": "vb",
+    "defin": "Suavizar, tranquilizar o mitigar.",
+    "sinom": null
+  },
+  {
+    "id": 7,
+    "title": "Coincidir",
+    "cover": "https://dummyimage.com/100x150/ddd/333&text=Coincidir",
+    "tag": "vb",
+    "defin": "Estar de acuerdo o ser iguales dos o más",
+    "sinom": ["convenir", "corresponder", "ajustar"]
+  }
+]
