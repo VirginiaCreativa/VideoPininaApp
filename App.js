@@ -11,14 +11,16 @@ import APIBASE from './assets/data/deficiones.json';
     suggestionLists: [],
     refreshing: true
   }
-  getDAta() {
+  getDAta(id) {
+    const data = APIBASE;
+    const listsDism = data.slice(0, 3);
     this.setState({
-      suggestionLists: APIBASE,
+      suggestionLists: listsDism,
       refreshing: false
     })
   }
   componentDidMount() {
-    this.getDAta();
+    this.getDAta(4);
   }
   render() {
     if(this.state.refreshing);
