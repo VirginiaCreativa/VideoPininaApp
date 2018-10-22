@@ -14,7 +14,7 @@ import API from './src/config/api';
   }
   
   componentDidMount() {
-    const suggestionData = API.getSuggetions(4);
+    const suggestionData = API.getSuggetions(5);
     this.setState({
       suggestionLists: suggestionData,
       refreshing: false
