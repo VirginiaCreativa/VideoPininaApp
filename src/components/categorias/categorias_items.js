@@ -11,13 +11,13 @@ const categorias_items = () => {
   return (
     <View style={classStyle.Container}>
       <View>
-        <Icon bgType="#fc5c65" iconType={Icon_Marcador} />
+        <Icon iconType={Icon_Marcador} />
       </View>
       <View>
-        <Icon bgType="#45aaf2" iconType={Icon_Frases} />
+        <Icon iconType={Icon_Frases} />
       </View>
       <View>
-        <Icon bgType="#fed330" iconType={Icon_Gramatica} />
+        <Icon iconType={Icon_Gramatica} />
       </View>
     </View>
   );
@@ -25,7 +25,7 @@ const categorias_items = () => {
 const classStyle = StyleSheet.create({
   Container: {
     flexDirection: "row",
-    justifyContent: "space-around"
+    justifyContent: "center"
   }
 });
 export default categorias_items;
